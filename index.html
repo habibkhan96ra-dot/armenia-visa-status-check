@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Armenia Visa Status Check</title>
+<style>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f3f5f9;
+  color: #263247;
+}
+header {
+  background: #172b4d;
+  color: white;
+  text-align: center;
+  padding: 35px 15px;
+}
+header h1 { margin: 0 0 10px; }
+main {
+  max-width: 550px;
+  margin: 55px auto;
+  padding: 20px;
+}
+.card {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px #0001;
+}
+input {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #ccc;
+  border-radius: 7px;
+  box-sizing: border-box;
+  font-size: 16px;
+}
+button {
+  width: 100%;
+  padding: 14px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 7px;
+  background: #2457a7;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+.note {
+  background: #edf4ff;
+  padding: 13px;
+  margin-top: 22px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+footer {
+  text-align: center;
+  color: #777;
+  font-size: 12px;
+  padding: 20px;
+}
+</style>
+</head>
+<body>
+
+<header>
+<h1>Armenia Visa Status Check</h1>
+<p>Independent Application Information Page</p>
+</header>
+
+<main>
+<div class="card">
+<h2>Check Visa Application</h2>
+<p>Enter your Application ID below.</p>
+
+<form id="searchForm">
+<input type="text" id="appId"
+placeholder="Enter Application ID" required>
+
+<button type="submit">Search Application</button>
+</form>
+
+<div class="note">
+<strong>Important:</strong> This is an independent
+website, not an official government service.
+Your application status can only be verified
+through the official Armenia E-Visa portal.
+</div>
+
+<p style="text-align:center">
+<a href="https://evisa.mfa.am/check-status"
+target="_blank" rel="noopener">
+Official Armenia Status Check
+</a>
+</p>
+</div>
+</main>
+
+<footer>
+Not affiliated with the Government of Armenia.
+</footer>
+
+<script>
+document.getElementById("searchForm")
+.addEventListener("submit", function(e) {
+  e.preventDefault();
+  window.open(
+    "https://evisa.mfa.am/check-status",
+    "_blank"
+  );
+});
+</script>
+
+</body>
+</html>
